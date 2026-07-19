@@ -11,7 +11,7 @@ This repository contains the static-export edition of Daniil Mikheev's interacti
 5. Under **Build and deployment → Source**, choose **GitHub Actions**.
 6. Open the **Actions** tab and wait for “Deploy portfolio to GitHub Pages” to complete.
 
-The included workflow automatically handles both repository Pages URLs such as `https://woys.github.io/portfolio/` and the root user site `https://woys.github.io/`.
+The included workflow automatically detects the configured GitHub Pages URL and currently publishes the site at `https://mikheevs.com/`.
 
 ## Local development
 
