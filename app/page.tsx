@@ -171,7 +171,7 @@ export default function Home() {
           <p className="overline"><span />Analytics Engineer · Data Engineer · BI Engineer</p>
           <h1>I build the data systems behind <em>confident decisions.</em></h1>
           <p className="hero-lead">I’m Daniil Mikheev, a Brooklyn-based analytics professional with 3+ years of experience turning fragmented business data into governed pipelines, trusted models, and decision-ready reporting.</p>
-          <div className="hero-actions"><a className="primary-button" href="https://github.com/Woys/Woys/blob/master/Resume%20Daniil%20Mikheev.pdf" target="_blank" rel="noreferrer">Resume <span>↗</span></a><a className="secondary-link" href="https://github.com/Woys" target="_blank" rel="noreferrer">View GitHub <span className="link-arrow" aria-hidden="true">↗</span></a><a className="secondary-link" href="https://www.linkedin.com/in/daniil-mikheev/" target="_blank" rel="noreferrer">LinkedIn <span className="link-arrow" aria-hidden="true">↗</span></a><a className="secondary-link" href="mailto:daniil@mikheevs.com">daniil@mikheevs.com <span className="link-arrow" aria-hidden="true">↗</span></a></div>
+          <div className="hero-actions"><a className="primary-button" href="https://github.com/Woys/Woys/blob/master/Resume%20Daniil%20Mikheev.pdf" target="_blank" rel="noreferrer">Resume</a><a className="secondary-link" href="https://github.com/Woys" target="_blank" rel="noreferrer">View GitHub</a><a className="secondary-link" href="https://www.linkedin.com/in/daniil-mikheev/" target="_blank" rel="noreferrer">LinkedIn</a><a className="secondary-link" href="mailto:daniil@mikheevs.com">daniil@mikheevs.com</a></div>
           <div className="trust-line"><span>PRODUCTION STACK</span><p>SQL · Python · dbt · Airflow · Snowflake · Redshift · Tableau · Sigma</p></div>
         </div>
         <aside className="profile-card">
@@ -202,8 +202,8 @@ export default function Home() {
         </div>
         <div className="role-search-links" aria-label="Role-specific professional profiles">
           <span>HIRING PROFILES</span>
-          <Link href="/analytics-engineer/">Analytics Engineer profile →</Link>
-          <Link href="/data-engineer/">Data Engineer profile →</Link>
+          <Link href="/analytics-engineer/">Analytics Engineer profile</Link>
+          <Link href="/data-engineer/">Data Engineer profile</Link>
         </div>
       </section>
 
@@ -226,7 +226,7 @@ export default function Home() {
               <h3>{project.title}</h3><p>{project.description}</p>
               <div className="project-chart"><ProjectVisualization type={project.visual} /><span>{project.metric}</span></div>
               <strong>{project.stack}</strong>
-              <div className="project-links"><a href={project.href} target="_blank" rel="noreferrer">View repository ↗</a>{project.title === "Airflow Batch" && <a href="https://www.kaggle.com/datasets/daniilmiheev/top-spotify-podcasts-daily-updated/data" target="_blank" rel="noreferrer">Years of continuous Kaggle delivery ↗</a>}</div>
+              <div className="project-links"><a href={project.href} target="_blank" rel="noreferrer">View repository</a>{project.title === "Airflow Batch" && <a href="https://www.kaggle.com/datasets/daniilmiheev/top-spotify-podcasts-daily-updated/data" target="_blank" rel="noreferrer">Years of continuous Kaggle delivery</a>}</div>
             </article>
           ))}
         </div>
@@ -234,8 +234,8 @@ export default function Home() {
 
       <section className="faq-section" aria-labelledby="faq-title"><div><p className="section-label">HIRING TEAM FAQ</p><h2 id="faq-title">The short version.</h2><p>Clear context for recruiters, hiring managers, and AI-assisted candidate research.</p></div><div className="faq-list">{faqs.map(([question, answer], index) => <details key={question} open={index === 0}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div></section>
 
-      <section className="contact-section"><p className="section-label">LET’S BUILD RELIABLE DATA</p><h2>Looking for an analytics engineer<br />who can connect <em>systems to decisions?</em></h2><div><a className="primary-button" href="mailto:daniil@mikheevs.com">Email Daniil <span>↗</span></a><a href="https://www.linkedin.com/in/daniil-mikheev/" target="_blank" rel="noreferrer">LinkedIn <span className="link-arrow" aria-hidden="true">↗</span></a><a href="tel:+18454801532">(845) 480-1532</a></div></section>
-      <footer className="site-footer"><span>© 2026 Daniil Mikheev · Brooklyn, NY</span><a href="#top">Back to top ↑</a></footer>
+      <section className="contact-section"><p className="section-label">LET’S BUILD RELIABLE DATA</p><h2>Looking for an analytics engineer<br />who can connect <em>systems to decisions?</em></h2><div><a className="primary-button" href="mailto:daniil@mikheevs.com">Email Daniil</a><a href="https://www.linkedin.com/in/daniil-mikheev/" target="_blank" rel="noreferrer">LinkedIn</a><a href="tel:+18454801532">(845) 480-1532</a></div></section>
+      <footer className="site-footer"><span>© 2026 Daniil Mikheev · Brooklyn, NY</span><a href="#top">Back to top</a></footer>
     </main>
   );
 }
