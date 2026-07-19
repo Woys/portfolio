@@ -171,7 +171,7 @@ export default function Home() {
           <p className="overline"><span />Analytics Engineer · Data Engineer · BI Engineer</p>
           <h1>I build the data systems behind <em>confident decisions.</em></h1>
           <p className="hero-lead">I’m Daniil Mikheev, a Brooklyn-based analytics professional with 3+ years of experience turning fragmented business data into governed pipelines, trusted models, and decision-ready reporting.</p>
-          <div className="hero-actions"><a className="primary-button" href="#pipeline">Explore the pipeline</a><a className="secondary-link" href="/assets/daniil-mikheev-resume.pdf" download="Daniil-Mikheev-Resume.pdf">Resume</a><a className="secondary-link" href="https://github.com/Woys" target="_blank" rel="noreferrer">View GitHub</a><a className="secondary-link" href="https://www.linkedin.com/in/daniil-mikheev/" target="_blank" rel="noreferrer">LinkedIn</a><a className="secondary-link" href="mailto:daniil@mikheevs.com">daniil@mikheevs.com</a></div>
+          <div className="hero-actions"><a className="primary-button" href="#pipeline">Explore the pipeline</a><a className="secondary-link" href="/assets/daniil-mikheev-resume.pdf" download="Daniil-Mikheev-Resume.pdf">Resume</a><a className="secondary-link" href="https://github.com/Woys" target="_blank" rel="noreferrer">GitHub</a><a className="secondary-link" href="https://www.linkedin.com/in/daniil-mikheev/" target="_blank" rel="noreferrer">LinkedIn</a><a className="secondary-link" href="mailto:daniil@mikheevs.com">daniil@mikheevs.com</a></div>
           <div className="trust-line"><span>PRODUCTION STACK</span><p>SQL · Python · dbt · Airflow · Snowflake · Redshift · Tableau · Sigma</p></div>
         </div>
         <aside className="profile-card">
