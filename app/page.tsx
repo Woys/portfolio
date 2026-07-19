@@ -171,12 +171,12 @@ export default function Home() {
           <p className="overline"><span />Analytics Engineer · Data Engineer · BI Engineer</p>
           <h1>I build the data systems behind <em>confident decisions.</em></h1>
           <p className="hero-lead">I’m Daniil Mikheev, a Brooklyn-based analytics professional with 3+ years of experience turning fragmented business data into governed pipelines, trusted models, and decision-ready reporting.</p>
-          <div className="hero-actions"><a className="primary-button" href="#pipeline">Explore the pipeline <span>↓</span></a><a className="secondary-link" href="https://github.com/Woys" target="_blank" rel="noreferrer">View GitHub <span className="link-arrow" aria-hidden="true">↗</span></a><a className="secondary-link" href="https://www.linkedin.com/in/daniil-mikheev/" target="_blank" rel="noreferrer">LinkedIn <span className="link-arrow" aria-hidden="true">↗</span></a></div>
+          <div className="hero-actions"><a className="primary-button" href="#pipeline">Explore the pipeline <span>↓</span></a><a className="secondary-link" href="https://github.com/Woys" target="_blank" rel="noreferrer">View GitHub <span className="link-arrow" aria-hidden="true">↗</span></a><a className="secondary-link" href="https://www.linkedin.com/in/daniil-mikheev/" target="_blank" rel="noreferrer">LinkedIn <span className="link-arrow" aria-hidden="true">↗</span></a><a className="secondary-link" href="mailto:dmikheeev@gmail.com">Email <span className="link-arrow" aria-hidden="true">↗</span></a></div>
           <div className="trust-line"><span>PRODUCTION STACK</span><p>SQL · Python · dbt · Airflow · Snowflake · Redshift · Tableau · Sigma</p></div>
         </div>
         <aside className="profile-card">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={`${basePath}/daniil-mikheev.webp`} alt="Daniil Mikheev, analytics engineering professional based in Brooklyn, New York" width="960" height="1440" />
+          <img src={`${basePath}/daniil-mikheev.webp`} alt="Daniil Mikheev, analytics engineering professional based in Brooklyn, New York" width="960" height="960" fetchPriority="high" decoding="async" />
           <div className="profile-card-copy"><span>AVAILABLE FOR THE RIGHT OPPORTUNITY</span><strong>Daniil Mikheev</strong><p>Senior Business Intelligence Analyst<br />Analytics Engineering focus</p><div><i />Brooklyn, New York</div></div>
         </aside>
       </section>
