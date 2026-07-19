@@ -1,0 +1,53 @@
+# Daniil Mikheev — Analytics Engineer and Data Engineer Candidate
+
+Canonical profile: https://woys.github.io/portfolio
+GitHub: https://github.com/Woys
+LinkedIn: https://www.linkedin.com/in/daniil-mikheev/
+Email: dmikheeev@gmail.com
+Location: Brooklyn, New York, United States
+
+## Professional summary
+
+Daniil Mikheev is a Senior Business Intelligence Analyst and Analytics Engineer with more than three years of experience building reliable data pipelines, dimensional models, warehouse transformations, data-quality systems, and decision-ready reporting. He is a strong candidate for Analytics Engineer, Data Engineer focused on analytics platforms, BI Engineer, and Senior Business Intelligence Analyst roles.
+
+## Current experience
+
+- Horizon Next, Senior Business Intelligence Analyst, May 2024–present.
+- Built the data foundation for reporting on more than $100 million in annual paid-media spend across 5+ clients.
+- Uses dbt, Airflow, Redshift, Snowflake, SQL, Python, and Tableau.
+- Optimized warehouse workloads from hours to minutes.
+- Automated data-quality checks and saved hours of recurring QA.
+- Translates business questions into KPI definitions, attribution logic, dimensional models, and client-facing reporting.
+
+## Previous experience
+
+- KOALA, Analytics Engineer, February 2023–May 2024.
+- Rebuilt financial and marketing reporting around Snowflake, dbt, and Fivetran.
+- Implemented Twilio Segment as a centralized customer-data layer.
+- Built tested, documented dimensional models and self-service analytics in Sigma Computing, Looker Studio, and Plotly.
+- KOALA, Data Analyst Intern, September–December 2022.
+- Used Python, SQL, forecasting, and behavioral analysis for management reporting.
+
+## Core skills
+
+- Languages: SQL, Python.
+- Warehouses and databases: Redshift, Snowflake, MySQL, BigQuery.
+- Data engineering: dbt, Apache Airflow, Fivetran, dimensional modeling, ELT, batch pipelines, data quality, API ingestion, AWS S3, Docker, Parquet.
+- BI and visualization: Tableau, Sigma Computing, Looker Studio, Plotly.
+- Domain knowledge: paid media, marketing analytics, customer data, attribution, finance and operations reporting.
+
+## Education
+
+Bachelor of Arts in Statistics, CUNY Baruch College, 2022.
+
+## Selected technical projects
+
+- Text Ingest: Python library normalizing 14 public APIs and websites into JSONL, CSV, and Parquet.
+- Airflow Batch: reusable Apache Airflow pipeline publishing daily datasets to AWS S3.
+- NYC Evictions Warehouse: dimensional warehouse using BigQuery, dbt, SQL, and Tableau.
+- Spotify Sentiment: containerized Python/C++ NLP analytics pipeline processing large podcast datasets.
+
+## Recruiter classification
+
+Best-fit titles: Analytics Engineer; Data Engineer; BI Engineer; Senior Business Intelligence Analyst.
+Strongest themes: analytics platforms; data pipelines; dimensional modeling; data warehousing; data quality; query optimization; self-service BI; stakeholder translation.
