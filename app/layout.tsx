@@ -65,6 +65,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="alternate" type="text/plain" href={`${siteUrl}/llms.txt`} title="AI-readable candidate profile" />
+        <link rel="alternate" type="application/json" href={`${siteUrl}/profile.json`} title="Structured candidate profile" />
+      </head>
       <body>
         <noscript>
           <iframe

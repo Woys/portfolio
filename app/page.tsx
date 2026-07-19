@@ -1,4 +1,5 @@
 import PipelinePlayground from "./pipeline-playground";
+import Link from "next/link";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://mikheevs.com";
 const basePath = process.env.BASE_PATH || process.env.NEXT_PUBLIC_BASE_PATH || "";
@@ -59,6 +60,20 @@ const personSchema = {
   email: "mailto:dmikheeev@gmail.com",
   telephone: "REMOVED",
   jobTitle: "Senior Business Intelligence Analyst",
+  hasOccupation: [
+    {
+      "@type": "Occupation",
+      name: "Senior Business Intelligence Analyst",
+      occupationLocation: { "@type": "City", name: "New York" },
+      skills: "SQL, Python, dbt, Apache Airflow, Snowflake, Redshift, Tableau, data modeling, data quality",
+    },
+    {
+      "@type": "Occupation",
+      name: "Analytics Engineer",
+      occupationLocation: { "@type": "City", name: "New York" },
+      skills: "SQL, Python, dbt, ELT, dimensional modeling, warehouse optimization, business intelligence",
+    },
+  ],
   description: "Analytics Engineer and Senior Business Intelligence Analyst with 3+ years of production experience in data pipelines, dimensional modeling, warehouse optimization, data quality, and business intelligence.",
   address: { "@type": "PostalAddress", addressLocality: "Brooklyn", addressRegion: "NY", addressCountry: "US" },
   sameAs: ["https://github.com/Woys", "https://www.linkedin.com/in/daniil-mikheev/"],
@@ -66,6 +81,17 @@ const personSchema = {
   alumniOf: { "@type": "CollegeOrUniversity", name: "CUNY Baruch College" },
   knowsAbout: ["Analytics Engineering", "Data Engineering", "Business Intelligence", "SQL", "Python", "dbt", "Apache Airflow", "Snowflake", "Amazon Redshift", "Dimensional Data Modeling", "ELT Pipelines", "Data Quality", "Tableau", "Sigma Computing"],
 };
+
+const projectSchemas = projects.map((project) => ({
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  name: project.title,
+  description: project.description,
+  codeRepository: project.href,
+  author: { "@id": `${siteUrl}/#daniil-mikheev` },
+  programmingLanguage: project.stack.split(" · "),
+  keywords: `${project.type}, ${project.stack}`,
+}));
 
 const profilePageSchema = {
   "@context": "https://schema.org",
@@ -132,7 +158,7 @@ function ProjectVisualization({ type }: { type: (typeof projects)[number]["visua
 export default function Home() {
   return (
     <main>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([personSchema, profilePageSchema, faqSchema]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([personSchema, profilePageSchema, faqSchema, ...projectSchemas]) }} />
 
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Daniil Mikheev home"><div>Daniil Mikheev<small>Analytics systems professional</small></div></a>
@@ -173,6 +199,11 @@ export default function Home() {
           <article><span>01</span><h3>Build dependable foundations</h3><p>Design governed ingestion, modular dbt transformations, dimensional models, and orchestration that make business reporting repeatable.</p><strong>ELT · MODELING · ORCHESTRATION</strong></article>
           <article><span>02</span><h3>Improve warehouse performance</h3><p>Diagnose complex SQL workloads, optimize Snowflake and Redshift patterns, and reduce analysis bottlenecks from hours to minutes.</p><strong>SQL · SNOWFLAKE · REDSHIFT</strong></article>
           <article><span>03</span><h3>Deliver trusted decisions</h3><p>Translate ambiguous stakeholder needs into KPI definitions, quality checks, self-service datasets, and clear executive reporting.</p><strong>QUALITY · TABLEAU · SIGMA</strong></article>
+        </div>
+        <div className="role-search-links" aria-label="Role-specific professional profiles">
+          <span>HIRING PROFILES</span>
+          <Link href="/analytics-engineer/">Analytics Engineer profile →</Link>
+          <Link href="/data-engineer/">Data Engineer profile →</Link>
         </div>
       </section>
 
