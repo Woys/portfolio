@@ -63,9 +63,9 @@ export default function RoleProfile({ role, intro, strengths, fit }: RoleProfile
           </div>
         </section>
 
-        <div className="role-actions"><a className="primary-button" href="mailto:daniil@mikheevs.com">Contact Daniil <span>↗</span></a><Link className="secondary-link" href="/">View full portfolio →</Link><a className="secondary-link" href="https://github.com/Woys">Review GitHub →</a></div>
+        <div className="role-actions"><a className="primary-button" href="mailto:daniil@mikheevs.com">Contact Daniil</a><Link className="secondary-link" href="/">View full portfolio</Link><a className="secondary-link" href="https://github.com/Woys">Review GitHub</a></div>
       </article>
-      <footer className="site-footer"><span>© 2026 Daniil Mikheev · Brooklyn, NY</span><Link href="/">Full portfolio ↑</Link></footer>
+      <footer className="site-footer"><span>© 2026 Daniil Mikheev · Brooklyn, NY</span><Link href="/">Full portfolio</Link></footer>
     </main>
   );
 }
