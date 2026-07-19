@@ -38,7 +38,7 @@ export default function RoleProfile({ role, intro, strengths, fit }: RoleProfile
       <header className="site-header">
         <Link className="brand" href="/"><div>Daniil Mikheev<small>Analytics systems professional</small></div></Link>
         <nav aria-label="Profile navigation"><Link href="/">Portfolio</Link><Link href="/analytics-engineer/">Analytics Engineer</Link><Link href="/data-engineer/">Data Engineer</Link></nav>
-        <a className="header-cta" href="mailto:dmikheeev@gmail.com">Start a conversation</a>
+        <a className="header-cta" href="mailto:daniil@mikheevs.com">Start a conversation</a>
       </header>
 
       <article className="role-content">
@@ -63,7 +63,7 @@ export default function RoleProfile({ role, intro, strengths, fit }: RoleProfile
           </div>
         </section>
 
-        <div className="role-actions"><a className="primary-button" href="mailto:dmikheeev@gmail.com">Contact Daniil <span>↗</span></a><Link className="secondary-link" href="/">View full portfolio →</Link><a className="secondary-link" href="https://github.com/Woys">Review GitHub →</a></div>
+        <div className="role-actions"><a className="primary-button" href="mailto:daniil@mikheevs.com">Contact Daniil <span>↗</span></a><Link className="secondary-link" href="/">View full portfolio →</Link><a className="secondary-link" href="https://github.com/Woys">Review GitHub →</a></div>
       </article>
       <footer className="site-footer"><span>© 2026 Daniil Mikheev · Brooklyn, NY</span><Link href="/">Full portfolio ↑</Link></footer>
     </main>
