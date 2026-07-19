@@ -40,6 +40,7 @@ The static site is generated in `out/`.
 - `app/globals.css` — complete visual system and responsive layout
 - `public/daniil-mikheev.webp` — portrait
 - `public/llms.txt` — generated AI-readable professional context
+- `public/profile.json` — structured candidate facts for search and AI systems
 - `scripts/llms.txt.template` — editable source for the AI-readable profile
 - `.github/workflows/deploy-pages.yml` — automatic GitHub Pages deployment
 - `next.config.mjs` — static-export and repository-subpath support

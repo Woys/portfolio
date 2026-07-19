@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://mikheevs.com/#daniil-mikheev",
+  "name": "Daniil Mikheev",
+  "url": "https://mikheevs.com",
+  "location": "Brooklyn, New York, United States",
+  "currentRole": {
+    "title": "Senior Business Intelligence Analyst",
+    "organization": "Horizon Next",
+    "startDate": "2024-05"
+  },
+  "targetRoles": [
+    "Analytics Engineer",
+    "Data Engineer",
+    "BI Engineer",
+    "Senior Business Intelligence Analyst"
+  ],
+  "summary": "Analytics engineering professional with more than three years of experience building production data pipelines, dimensional models, warehouse transformations, data quality systems, and decision-ready reporting.",
+  "skills": {
+    "languages": ["SQL", "Python"],
+    "dataEngineering": ["dbt", "Apache Airflow", "Fivetran", "ELT", "dimensional modeling", "data quality", "API ingestion"],
+    "warehouses": ["Snowflake", "Amazon Redshift", "BigQuery", "MySQL"],
+    "platforms": ["AWS S3", "Docker", "Parquet"],
+    "businessIntelligence": ["Tableau", "Sigma Computing", "Looker Studio", "Plotly"]
+  },
+  "evidence": [
+    "Supported reporting data foundations for more than $100 million in annual paid-media spend across 5+ enterprise clients.",
+    "Improved warehouse query performance from hours to minutes.",
+    "Built tested dimensional models, governed ELT workflows, automated quality checks, and self-service reporting."
+  ],
+  "education": {
+    "degree": "Bachelor of Arts in Statistics",
+    "institution": "CUNY Baruch College",
+    "graduationYear": 2022
+  },
+  "sameAs": [
+    "https://github.com/Woys",
+    "https://www.linkedin.com/in/daniil-mikheev/"
+  ],
+  "contact": {
+    "email": "dmikheeev@gmail.com"
+  }
+}
