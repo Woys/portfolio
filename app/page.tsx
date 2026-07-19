@@ -34,7 +34,7 @@ const projects = [
   {
     title: "Airflow Batch",
     type: "Production-minded orchestration",
-    description: "Runs reusable daily pipelines for podcast charts across 22 regions and publishes analytics-ready research datasets to Amazon S3.",
+    description: "Runs a production pipeline that has continuously published daily Spotify podcast data to Kaggle for years, alongside reusable jobs across 22 regions and Amazon S3 delivery.",
     stack: "Airflow · AWS S3 · Docker · Pandas",
     href: "https://github.com/Woys/Airflow-Batch",
     visual: "airflow",
@@ -145,7 +145,7 @@ export default function Home() {
           <p className="overline"><span />Analytics Engineer · Data Engineer · BI Engineer</p>
           <h1>I build the data systems behind <em>confident decisions.</em></h1>
           <p className="hero-lead">I’m Daniil Mikheev, a Brooklyn-based analytics professional with 3+ years of experience turning fragmented business data into governed pipelines, trusted models, and decision-ready reporting.</p>
-          <div className="hero-actions"><a className="primary-button" href="#pipeline">Explore the pipeline <span>↓</span></a><a className="secondary-link" href="https://github.com/Woys" target="_blank" rel="noreferrer">View GitHub <span className="link-arrow" aria-hidden="true">↗</span></a><a className="secondary-link" href="https://www.linkedin.com/in/daniil-mikheev/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+          <div className="hero-actions"><a className="primary-button" href="#pipeline">Explore the pipeline <span>↓</span></a><a className="secondary-link" href="https://github.com/Woys" target="_blank" rel="noreferrer">View GitHub <span className="link-arrow" aria-hidden="true">↗</span></a><a className="secondary-link" href="https://www.linkedin.com/in/daniil-mikheev/" target="_blank" rel="noreferrer">LinkedIn <span className="link-arrow" aria-hidden="true">↗</span></a></div>
           <div className="trust-line"><span>PRODUCTION STACK</span><p>SQL · Python · dbt · Airflow · Snowflake · Redshift · Tableau · Sigma</p></div>
         </div>
         <aside className="profile-card">
@@ -189,20 +189,21 @@ export default function Home() {
       <section className="projects-section" id="work">
         <div className="section-intro project-intro"><div><p className="section-label">SELECTED ENGINEERING WORK</p><h2>Proof in the<br /><em>repository.</em></h2></div><p>Open-source systems that demonstrate ingestion, orchestration, warehouse modeling, and analytical delivery.</p></div>
         <div className="project-grid">
-          {projects.map((project, index) => (
-            <a className="project-card" href={project.href} target="_blank" rel="noreferrer" key={project.title}>
+          {[projects[3], ...projects.slice(0, 3)].map((project, index) => (
+            <article className="project-card" key={project.title}>
               <div className="project-meta"><span>0{index + 1}</span><span>{project.type}</span><b>↗</b></div>
               <h3>{project.title}</h3><p>{project.description}</p>
               <div className="project-chart"><ProjectVisualization type={project.visual} /><span>{project.metric}</span></div>
               <strong>{project.stack}</strong>
-            </a>
+              <div className="project-links"><a href={project.href} target="_blank" rel="noreferrer">View repository ↗</a>{project.title === "Airflow Batch" && <a href="https://www.kaggle.com/datasets/daniilmiheev/top-spotify-podcasts-daily-updated/data" target="_blank" rel="noreferrer">Years of continuous Kaggle delivery ↗</a>}</div>
+            </article>
           ))}
         </div>
       </section>
 
       <section className="faq-section" aria-labelledby="faq-title"><div><p className="section-label">HIRING TEAM FAQ</p><h2 id="faq-title">The short version.</h2><p>Clear context for recruiters, hiring managers, and AI-assisted candidate research.</p></div><div className="faq-list">{faqs.map(([question, answer], index) => <details key={question} open={index === 0}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div></section>
 
-      <section className="contact-section"><p className="section-label">LET’S BUILD RELIABLE DATA</p><h2>Looking for an analytics engineer<br />who can connect <em>systems to decisions?</em></h2><div><a className="primary-button" href="mailto:dmikheeev@gmail.com">Email Daniil <span>↗</span></a><a href="https://www.linkedin.com/in/daniil-mikheev/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="tel:REMOVED">REMOVED</a></div></section>
+      <section className="contact-section"><p className="section-label">LET’S BUILD RELIABLE DATA</p><h2>Looking for an analytics engineer<br />who can connect <em>systems to decisions?</em></h2><div><a className="primary-button" href="mailto:dmikheeev@gmail.com">Email Daniil <span>↗</span></a><a href="https://www.linkedin.com/in/daniil-mikheev/" target="_blank" rel="noreferrer">LinkedIn <span className="link-arrow" aria-hidden="true">↗</span></a><a href="tel:REMOVED">REMOVED</a></div></section>
       <footer className="site-footer"><span>© 2026 Daniil Mikheev · Brooklyn, NY</span><a href="#top">Back to top ↑</a></footer>
     </main>
   );
