@@ -7,6 +7,7 @@ const nextConfig = {
   basePath,
   assetPrefix: basePath || undefined,
   images: { unoptimized: true },
+  experimental: { inlineCss: true },
 };
 
 export default nextConfig;
