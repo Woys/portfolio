@@ -1,7 +1,7 @@
 import PipelinePlayground from "./pipeline-playground";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://woys.github.io/portfolio";
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const basePath = process.env.BASE_PATH || process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const projects = [
   {
