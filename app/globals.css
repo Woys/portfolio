@@ -73,7 +73,8 @@ button { font: inherit; }
 .hero-actions { margin-top: 34px; display: flex; align-items: center; gap: 26px; }
 .primary-button { min-height: 50px; padding: 0 20px; display: inline-flex; align-items: center; justify-content: center; gap: 28px; border: 1px solid var(--blue); border-radius: 10px; background: var(--blue); color: #fff; box-shadow: 0 8px 22px rgba(112,71,55,.17); font-size: .77rem; font-weight: 650; transition: transform 150ms ease, background 150ms ease, box-shadow 150ms ease; }
 .primary-button:hover, .primary-button:focus-visible { transform: translateY(-2px); background: var(--blue-dark); box-shadow: 0 12px 28px rgba(112,71,55,.22); }
-.secondary-link { color: var(--blue); font-size: .78rem; font-weight: 650; }
+.secondary-link { color: var(--ink-2); font-size: .78rem; font-weight: 650; }
+.link-arrow { color: var(--blue); }
 .trust-line { margin-top: 44px; padding-top: 18px; display: grid; grid-template-columns: 145px 1fr; gap: 16px; border-top: 1px solid var(--line); }
 .trust-line span { color: var(--muted); font-family: var(--font-geist-mono), monospace; font-size: .59rem; letter-spacing: .07em; }
 .trust-line p { margin: 0; color: var(--ink-2); font-family: var(--font-geist-mono), monospace; font-size: .67rem; line-height: 1.55; }
