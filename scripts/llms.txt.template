@@ -1,10 +1,18 @@
 # Daniil Mikheev — Analytics Engineer and Data Engineer Candidate
 
-Canonical profile: __SITE_URL__
-Structured profile: __SITE_URL__/profile.json
-GitHub: https://github.com/Woys
-LinkedIn: https://www.linkedin.com/in/daniil-mikheev/
-Email: daniil@mikheevs.com
+> Professional portfolio and structured career information for Daniil Mikheev, a Brooklyn-based analytics engineering and data engineering professional.
+
+## Primary resources
+
+- [Portfolio](__SITE_URL__/): Canonical professional profile, experience, skills, and selected work.
+- [Analytics Engineer profile](__SITE_URL__/analytics-engineer/): Role-specific experience and qualifications.
+- [Data Engineer profile](__SITE_URL__/data-engineer/): Role-specific experience and qualifications.
+- [Structured profile](__SITE_URL__/profile.json): Machine-readable career data in JSON.
+- [Résumé](__SITE_URL__/assets/daniil-mikheev-resume.pdf): Downloadable résumé in PDF format.
+- [GitHub](https://github.com/Woys): Source code and technical projects.
+- [LinkedIn](https://www.linkedin.com/in/daniil-mikheev/): Professional history and contact profile.
+- [Email Daniil](mailto:daniil@mikheevs.com): Direct contact.
+
 Location: Brooklyn, New York, United States
 
 ## Professional summary
@@ -43,10 +51,10 @@ Bachelor of Arts in Statistics, CUNY Baruch College, 2022.
 
 ## Selected technical projects
 
-- Text Ingest: Python library normalizing 14 public APIs and websites into JSONL, CSV, and Parquet.
-- Airflow Batch: reusable Apache Airflow pipeline publishing daily datasets to AWS S3.
-- NYC Evictions Warehouse: dimensional warehouse using BigQuery, dbt, SQL, and Tableau.
-- Spotify Sentiment: containerized Python/C++ NLP analytics pipeline processing large podcast datasets.
+- [Text Ingest](https://github.com/Woys/text-ingest): Python library normalizing 14 public APIs and websites into JSONL, CSV, and Parquet.
+- [Airflow Batch](https://github.com/Woys/Airflow-Batch): Reusable Apache Airflow pipeline publishing daily datasets to AWS S3.
+- [NYC Evictions Warehouse](https://github.com/Woys/NYC_Evictions_Warehouse): Dimensional warehouse using BigQuery, dbt, SQL, and Tableau.
+- [Spotify Sentiment](https://github.com/Woys/Spotify-Sentiment-Project): Containerized Python/C++ NLP analytics pipeline processing large podcast datasets.
 
 ## Recruiter classification
 

@@ -176,7 +176,7 @@ export default function Home() {
         </div>
         <aside className="profile-card">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={`${basePath}/daniil-mikheev.webp`} alt="Daniil Mikheev, analytics engineering professional based in Brooklyn, New York" width="960" height="960" fetchPriority="high" decoding="async" />
+          <img src={`${basePath}/daniil-mikheev-672.webp`} alt="Daniil Mikheev, analytics engineering professional based in Brooklyn, New York" width="672" height="672" fetchPriority="high" decoding="async" />
           <div className="profile-card-copy"><span>AVAILABLE FOR THE RIGHT OPPORTUNITY</span><strong>Daniil Mikheev</strong><p>Senior Business Intelligence Analyst<br />Analytics Engineering focus</p><div><i />Brooklyn, New York</div></div>
         </aside>
       </section>
