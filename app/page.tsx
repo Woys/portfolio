@@ -222,7 +222,11 @@ export default function Home() {
         <div className="project-grid">
           {[projects[3], ...projects.slice(0, 3)].map((project, index) => (
             <article className="project-card" key={project.title}>
-              <div className="project-meta"><span>0{index + 1}</span><span>{project.type}</span><b>↗</b></div>
+              <div className="project-meta">
+                <span>0{index + 1}</span>
+                <span>{project.type}</span>
+                <a href={project.href} target="_blank" rel="noreferrer" aria-label={`Open the ${project.title} GitHub repository`}>↗</a>
+              </div>
               <h3>{project.title}</h3><p>{project.description}</p>
               <div className="project-chart"><ProjectVisualization type={project.visual} /><span>{project.metric}</span></div>
               <strong>{project.stack}</strong>
