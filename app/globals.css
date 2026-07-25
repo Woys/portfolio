@@ -59,8 +59,7 @@ button { font: inherit; }
   margin: 0 auto;
   padding: 86px 20px 82px;
   display: grid;
-  grid-template-columns: minmax(0,1.08fr) minmax(440px,.92fr);
-  gap: 72px;
+  grid-template-columns: 1fr;
   align-items: center;
 }
 .hero-copy { min-width: 0; max-width: 900px; }
@@ -80,14 +79,6 @@ button { font: inherit; }
 .trust-line span { color: var(--muted); font-family: var(--font-geist-mono), monospace; font-size: .59rem; letter-spacing: .07em; }
 .trust-line p { margin: 0; color: var(--ink-2); font-family: var(--font-geist-mono), monospace; font-size: .67rem; line-height: 1.55; }
 
-.profile-card { width: 100%; max-width: 520px; justify-self: end; overflow: hidden; position: relative; border: 1px solid var(--line); border-radius: 24px; background: var(--white); box-shadow: 0 24px 70px rgba(72,48,38,.12); }
-.profile-card::before { content: ""; position: absolute; z-index: -1; inset: -20px; background: var(--lilac); border-radius: 34px; }
-.profile-card-copy { padding: 22px; }
-.profile-card-copy > span { color: var(--yellow); font-family: var(--font-geist-mono), monospace; font-size: .55rem; font-weight: 650; letter-spacing: .06em; }
-.profile-card-copy > strong { margin-top: 9px; display: block; font-size: 1.38rem; letter-spacing: -.03em; }
-.profile-card-copy > p { margin: 7px 0 16px; color: var(--muted); font-size: .76rem; line-height: 1.5; }
-.profile-card-copy > div { padding-top: 13px; display: flex; align-items: center; gap: 7px; border-top: 1px solid var(--line); color: var(--ink-2); font-size: .68rem; }
-.profile-card-copy i { width: 7px; height: 7px; border-radius: 50%; background: var(--yellow); }
 
 .proof-band { width: min(100% - 64px, 1440px); margin: 0 auto; display: grid; grid-template-columns: repeat(4,1fr); overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: var(--white); box-shadow: 0 12px 40px rgba(72,48,38,.05); }
 .proof-band article { min-height: 132px; padding: 25px 28px; display: flex; flex-direction: column; justify-content: center; gap: 8px; border-right: 1px solid var(--line); }
@@ -275,7 +266,7 @@ button { font: inherit; }
 @media (max-width: 1180px) {
   .site-header { grid-template-columns: 1fr auto; }
   .site-header nav { display: none; }
-  .hero { grid-template-columns: minmax(0,1.05fr) minmax(390px,.95fr); gap: 52px; }
+  .hero { grid-template-columns: 1fr; }
   .hero h1 { font-size: clamp(4rem,7.5vw,6.4rem); }
   .pipeline-workspace { grid-template-columns: 170px minmax(0,1fr); }
   .asset-library { padding-left: 8px; padding-right: 8px; }
@@ -290,8 +281,6 @@ button { font: inherit; }
   .header-cta { display: none; }
   .hero { padding: 72px 0; grid-template-columns: 1fr; gap: 48px; }
   .hero h1 { font-size: clamp(3.4rem,13vw,5.8rem); }
-  .profile-card { max-width: 560px; justify-self: start; display: block; }
-  .profile-card-copy { align-self: center; }
   .proof-band { grid-template-columns: repeat(2,1fr); }
   .proof-band article:nth-child(2) { border-right: 0; }
   .proof-band article:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
@@ -318,7 +307,6 @@ button { font: inherit; }
   .hero h1 { font-size: clamp(3rem,14vw,4.3rem); }
   .hero-actions { align-items: flex-start; flex-direction: column; }
   .trust-line { grid-template-columns: 1fr; }
-  .profile-card { display: block; }
   .proof-band { grid-template-columns: 1fr; }
   .proof-band article { min-height: 110px; border-right: 0; border-bottom: 1px solid var(--line); }
   .pipeline-appbar { align-items: flex-start; flex-direction: column; padding: 15px; gap: 12px; }

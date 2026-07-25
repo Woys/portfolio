@@ -8,7 +8,6 @@
 - [Analytics Engineer profile](https://mikheevs.com/analytics-engineer/): Role-specific experience and qualifications.
 - [Data Engineer profile](https://mikheevs.com/data-engineer/): Role-specific experience and qualifications.
 - [Structured profile](https://mikheevs.com/profile.json): Machine-readable career data in JSON.
-- [Résumé](https://mikheevs.com/assets/daniil-mikheev-resume.pdf): Downloadable résumé in PDF format.
 - [GitHub](https://github.com/Woys): Source code and technical projects.
 - [LinkedIn](https://www.linkedin.com/in/daniil-mikheev/): Professional history and contact profile.
 - [Email Daniil](mailto:daniil@mikheevs.com): Direct contact.
