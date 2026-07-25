@@ -2,7 +2,6 @@ import PipelinePlayground from "./pipeline-playground";
 import Link from "next/link";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://mikheevs.com";
-const basePath = process.env.BASE_PATH || process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const projects = [
   {
@@ -56,9 +55,7 @@ const personSchema = {
   "@id": `${siteUrl}/#daniil-mikheev`,
   name: "Daniil Mikheev",
   url: siteUrl,
-  image: `${siteUrl}/daniil-mikheev.webp`,
   email: "mailto:daniil@mikheevs.com",
-  telephone: "+1-845-480-1532",
   jobTitle: "Senior Business Intelligence Analyst",
   hasOccupation: [
     {
@@ -175,8 +172,6 @@ export default function Home() {
           <div className="trust-line"><span>PRODUCTION STACK</span><p>SQL · Python · dbt · Airflow · Snowflake · Redshift · Tableau · Sigma</p></div>
         </div>
         <aside className="profile-card">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={`${basePath}/daniil-mikheev-672.webp`} alt="Daniil Mikheev, analytics engineering professional based in Brooklyn, New York" width="672" height="672" fetchPriority="high" decoding="async" />
           <div className="profile-card-copy"><span>AVAILABLE FOR THE RIGHT OPPORTUNITY</span><strong>Daniil Mikheev</strong><p>Senior Business Intelligence Analyst<br />Analytics Engineering focus</p><div><i />Brooklyn, New York</div></div>
         </aside>
       </section>
@@ -238,7 +233,7 @@ export default function Home() {
 
       <section className="faq-section" aria-labelledby="faq-title"><div><p className="section-label">HIRING TEAM FAQ</p><h2 id="faq-title">The short version.</h2><p>Clear context for recruiters, hiring managers, and AI-assisted candidate research.</p></div><div className="faq-list">{faqs.map(([question, answer], index) => <details key={question} open={index === 0}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div></section>
 
-      <section className="contact-section"><p className="section-label">LET’S BUILD RELIABLE DATA</p><h2>Looking for an analytics engineer<br />who can connect <em>systems to decisions?</em></h2><div><a className="primary-button" href="mailto:daniil@mikheevs.com">Email Daniil</a><a href="https://www.linkedin.com/in/daniil-mikheev/" target="_blank" rel="noreferrer">LinkedIn</a><a href="tel:+18454801532">(845) 480-1532</a></div></section>
+      <section className="contact-section"><p className="section-label">LET’S BUILD RELIABLE DATA</p><h2>Looking for an analytics engineer<br />who can connect <em>systems to decisions?</em></h2><div><a className="primary-button" href="mailto:daniil@mikheevs.com">Email Daniil</a><a href="https://www.linkedin.com/in/daniil-mikheev/" target="_blank" rel="noreferrer">LinkedIn</a></div></section>
       <footer className="site-footer"><span>© 2026 Daniil Mikheev · Brooklyn, NY</span><a href="#top">Back to top</a></footer>
     </main>
   );
