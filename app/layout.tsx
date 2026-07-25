@@ -48,14 +48,12 @@ export const metadata: Metadata = {
       "Analytics engineering, data pipelines, dimensional modeling, warehouse optimization, and BI systems built with SQL, Python, dbt, Airflow, Snowflake, and Redshift.",
     siteName: "Daniil Mikheev Portfolio",
     locale: "en_US",
-    images: [{ url: `${siteUrl}/daniil-mikheev.webp`, width: 960, height: 960, alt: "Portrait of Daniil Mikheev" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Daniil Mikheev — Analytics Engineer & Data Engineer Portfolio",
     description:
       "3+ years building reliable analytics systems with SQL, Python, dbt, Airflow, Snowflake, and Redshift.",
-    images: [`${siteUrl}/daniil-mikheev.webp`],
   },
   category: "technology",
   other: { "codex-preview": "development" },
